@@ -96,21 +96,6 @@ namespace Gcd.Version
         public void GcdTest_WithAllZeroNumbers_ThrowArgumentException() =>
             Assert.Throws<ArgumentException>(() => GetGcdByEuclidean(0, 0, 0, 0, 0, 0, 0, 0, 0),
                 "All numbers cannot be 0 at the same time.");
-
-        [Test, Order(10)]
-        public void GcdTest_WithIntMinValue_ThrowArgumentException() =>
-            Assert.Throws<ArgumentException>(() => GetGcdByEuclidean(0, 0, 0, 0, int.MinValue, 0, 0, 0),
-                "int.MinValue cannot be passed to the method, because the execution result can cause the OverflowException.");
-
-        [Test, Order(11)]
-        public void GcdTest_3argumentsWithIntMinValue_ThrowArgumentException() =>
-            Assert.Throws<ArgumentException>(() => GetGcdByEuclidean(10, 20, int.MinValue),
-                "int.MinValue cannot be passed to the method, because the execution result can cause the OverflowException.");
-
-        [Test, Order(12)]
-        public void GcdTest_OneArgument_ThrowArgumentException() =>
-            Assert.Throws<ArgumentException>(() => GetGcdByEuclidean(10, 20, int.MinValue),
-                "Numbers quantity shold be more than 1.");
         
         # endregion TastCases fo GetGcdByEuclidian
 
@@ -133,7 +118,7 @@ namespace Gcd.Version
         [TestCase(1590771464, -1590771620, ExpectedResult = 4)]
         [TestCase(-10234567, -234568989, ExpectedResult = 97)]
         [Timeout(3000)]
-        [Order(13)]
+        [Order(10)]
         public int GcdTests_WithTwoArgumentsByStein(int a, int b) => GetGcdByStein(a, b);
 
         [TestCase(945, 0, ExpectedResult = 945)]
@@ -141,7 +126,7 @@ namespace Gcd.Version
         [TestCase(10927782, 0, ExpectedResult = 10927782)]
         [TestCase(-1590771464, 0, ExpectedResult = 1590771464)]
         [Timeout(3000)]
-        [Order(14)]
+        [Order(11)]
         public int GcdTests_WithOneZeroNumberByStein(int a, int b) => GetGcdByStein(a, b);
 
         [TestCase(100, 60, 40, ExpectedResult = 20)]
@@ -153,7 +138,7 @@ namespace Gcd.Version
         [TestCase(15, 5, 45, ExpectedResult = 5)]
         [TestCase(0, 0, -1, ExpectedResult = 1)]
         [Timeout(3000)]
-        [Order(15)]
+        [Order(12)]
         public int GcdTests_WithThreeArgumentsByStein(int a, int b, int c) => GetGcdByStein(a, b, c);
 
         [TestCase(0, 0, 1, 0, ExpectedResult = 1)]
@@ -161,7 +146,7 @@ namespace Gcd.Version
         [TestCase(18, 3, 9, 6, ExpectedResult = 3)]
         [TestCase(-10234567, -234568989, 12358638, 978632483, ExpectedResult = 1)]
         [Timeout(3000)]
-        [Order(16)]
+        [Order(13)]
         public int GcdTests_WithFourArgumentsByStein(int a, int b, int c, int d) => GetGcdByStein(a, b, c, d);
 
         [TestCase(100, 60, 40, ExpectedResult = 20)]
@@ -182,43 +167,28 @@ namespace Gcd.Version
         [TestCase(3, -3, 3, ExpectedResult = 3)]
         [TestCase(-7, -7, ExpectedResult = 7)]
         [TestCase(123413, 943578, 123413, 943578, 943578, int.MaxValue, ExpectedResult = 1)]
-        [Order(17)]
+        [Order(14)]
         public int GcdTests_WithDifferentNumbersByStein(params int[] integers) => GetGcdByStein(integers);
 
-        [Test, Order(18)]
+        [Test, Order(15)]
         public void GetGcdBySteinTest_WithTwoZeroNumbers_ThrowArgumentException() =>
             Assert.Throws<ArgumentException>(() => GetGcdByStein(0, 0),
                 "All numbers cannot be 0 at the same time.");
 
-        [Test, Order(19)]
+        [Test, Order(16)]
         public void GetGcdBySteinTest_WithThreeZeroNumbers_ThrowArgumentException() =>
             Assert.Throws<ArgumentException>(() => GetGcdByStein(0, 0, 0),
                 "All numbers cannot be 0 at the same time.");
 
-        [Test, Order(20)]
+        [Test, Order(17)]
         public void GetGcdBySteinTest_WithFourZeroNumbers_ThrowArgumentException() =>
             Assert.Throws<ArgumentException>(() => GetGcdByStein(0, 0, 0, 0),
                 "All numbers cannot be 0 at the same time.");
 
-        [Test, Order(21)]
+        [Test, Order(18)]
         public void GetGcdBySteinTest_WithAllZeroNumbers_ThrowArgumentException() =>
             Assert.Throws<ArgumentException>(() => GetGcdByStein(0, 0, 0, 0, 0, 0, 0, 0, 0),
                 "All numbers cannot be 0 at the same time.");
-
-        [Test, Order(22)]
-        public void GetGcdBySteinTest_WithIntMinValue_ThrowArgumentException() =>
-            Assert.Throws<ArgumentException>(() => GetGcdByStein(0, 0, 0, 0, int.MinValue, 0, 0, 0),
-                "int.MinValue cannot be passed to the method, because the execution result can cause the OverflowException.");
-
-        [Test, Order(23)]
-        public void GetGcdBySteinTest_3argumentsWithIntMinValue_ThrowArgumentException() =>
-            Assert.Throws<ArgumentException>(() => GetGcdByStein(10, 20, int.MinValue),
-                "int.MinValue cannot be passed to the method, because the execution result can cause the OverflowException.");
-
-        [Test, Order(24)]
-        public void GetGcdBySteinTest_OneArgument_ThrowArgumentException() =>
-            Assert.Throws<ArgumentException>(() => GetGcdByStein(10, 20, int.MinValue),
-                "Numbers quantity shold be more than 1.");
         
         #endregion TastCases fo GetGcdByStein
     }
