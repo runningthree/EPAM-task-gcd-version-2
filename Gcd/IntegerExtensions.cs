@@ -10,39 +10,42 @@ namespace Gcd
         #region GetGcdByEuclidean Methods
 
         /// <summary>
-        /// Calculates GCD of two integers by the Euclidean algorithm.
+        /// Calculates GCD of two integers from [-int.MaxValue;int.MaxValue] by the Euclidean algorithm.
         /// </summary>
         /// <param name="a">First integer.</param>
         /// <param name="b">Second integer.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Throw when one or two numbers are int.MinValue.</exception>
         public static int GetGcdByEuclidean(int a, int b)
         {
             throw new NotImplementedException("You need to implement this function.");
         }
 
         /// <summary>
-        /// Calculates GCD of three integers by the Euclidean algorithm.
+        /// Calculates GCD of three integers from [-int.MaxValue;int.MaxValue] by the Euclidean algorithm.
         /// </summary>
         /// <param name="a">First integer.</param>
         /// <param name="b">Second integer.</param>
         /// <param name="c">Third integer.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Throw when one or more numbers are int.MinValue.</exception>
         public static int GetGcdByEuclidean(int a, int b, int c)
         {
             throw new NotImplementedException("You need to implement this function.");
         }
 
         /// <summary>
-        /// Calculates the GCD of integers by the Euclidean algorithm.
+        /// Calculates the GCD of integers from [-int.MaxValue;int.MaxValue] by the Euclidean algorithm.
         /// </summary>
-        /// <param name="integers">Source integers.</param>
+        /// <param name="a">First integer.</param>
+        /// <param name="b">Second integer.</param>
+        /// <param name="other">Other integers.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.
-        /// -or- when length of integers is one.</exception>
-        /// <exception cref="ArgumentNullException">Throw when integers equals null.</exception>
-        public static int GetGcdByEuclidean(params int[] integers)
+        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Throw when one or more numbers are int.MinValue.</exception>
+        public static int GetGcdByEuclidean(int a, int b, params int[] other)
         {
             throw new NotImplementedException("You need to implement this function.");
         }
@@ -52,39 +55,42 @@ namespace Gcd
         #region GetGcdByStein methods
 
         /// <summary>
-        /// Calculates GCD of two integers by the Stein algorithm.
+        /// Calculates GCD of two integers [-int.MaxValue;int.MaxValue] by the Stein algorithm.
         /// </summary>
         /// <param name="a">First integer.</param>
         /// <param name="b">Second integer.</param>
-        /// <returns>The GSD value.</returns>
+        /// <returns>The GCD value.</returns>
         /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Throw when one or two numbers are int.MinValue.</exception>
         public static int GetGcdByStein(int a, int b)
         {
             throw new NotImplementedException("You need to implement this function.");
         }
 
         /// <summary>
-        /// Calculates GCD of three integers by the Stein algorithm.
+        /// Calculates GCD of three integers [-int.MaxValue;int.MaxValue] by the Stein algorithm.
         /// </summary>
         /// <param name="a">First integer.</param>
         /// <param name="b">Second integer.</param>
         /// <param name="c">Third integer.</param>
-        /// <returns>The GSD value.</returns>
-        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
+        /// <returns>The GCD value.</returns>
+        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Throw when one or more numbers are int.MinValue.</exception>
         public static int GetGcdByStein(int a, int b, int c)
         {
             throw new NotImplementedException("You need to implement this function.");
         }
 
         /// <summary>
-        /// Calculates the GCD of integers by the Stein algorithm.
+        /// Calculates the GCD of integers [-int.MaxValue;int.MaxValue] by the Stein algorithm.
         /// </summary>
-        /// <param name="integers">Source integers.</param>
-        /// <returns>The GSD value.</returns>
-        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.
-        /// -or- when length of integers is one.</exception>
-        /// <exception cref="ArgumentNullException">Throw when integers equals null.</exception>
-        public static int GetGcdByStein(params int[] integers)
+        /// <param name="a">First integer.</param>
+        /// <param name="b">Second integer.</param>
+        /// <param name="other">Other integers.</param>
+        /// <returns>The GCD value.</returns>
+        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Throw when one or more numbers are int.MinValue.</exception>
+        public static int GetGcdByStein(int a, int b, params int[] other)
         {
             throw new NotImplementedException("You need to implement this function.");
         }
@@ -94,42 +100,45 @@ namespace Gcd
         #region GetGcdEuclidian with elapsed time Methods
 
         /// <summary>
-        /// Calculates GCD of two integers by the Euclidean algorithm with elapsed time.
+        /// Calculates GCD of two integers from [-int.MaxValue;int.MaxValue] by the Euclidean algorithm with elapsed time.
         /// </summary>
-        /// <param name="a">First integer for GCD.</param>
-        /// <param name="b">Second integer for GCD.</param>
         /// <param name="elapsedTicks">Method execution time in ticks.</param>
+        /// <param name="a">First integer.</param>
+        /// <param name="b">Second integer.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
-        public static int GetGcdByEuclidean(int a, int b, out double elapsedTicks)
+        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Throw when one or two numbers are int.MinValue.</exception>
+        public static int GetGcdByEuclidean(out double elapsedTicks, int a, int b)
         {
             throw new NotImplementedException("You need to implement this function.");
         }
 
         /// <summary>
-        /// Calculates GCD of three integers by the Euclidean algorithm with elapsed time.
+        /// Calculates GCD of three integers from [-int.MaxValue;int.MaxValue] by the Euclidean algorithm with elapsed time.
         /// </summary>
-        /// <param name="a">First integer for GCD.</param>
-        /// <param name="b">Second integer for GCD.</param>
-        /// <param name="c">Third integer for GCD.</param>
         /// <param name="elapsedTicks">Method execution time in ticks.</param>
+        /// <param name="a">First integer.</param>
+        /// <param name="b">Second integer.</param>
+        /// <param name="c">Third integer.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
-        public static long GetGcdByEuclidean(int a, int b, int c, out double elapsedTicks)
+        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Throw when one or more numbers are int.MinValue.</exception>
+        public static long GetGcdByEuclidean(out double elapsedTicks, int a, int b, int c)
         {
             throw new NotImplementedException("You need to implement this function.");
         }
 
         /// <summary>
-        /// Calculates the GCD of integers by the Euclidean algorithm with elapsed time.
+        /// Calculates the GCD of integers from [-int.MaxValue;int.MaxValue] by the Euclidean algorithm with elapsed time.
         /// </summary>
         /// <param name="elapsedTicks">Method execution time in Ticks.</param>
-        /// <param name="integers">Source integers.</param>
+        /// <param name="a">First integer.</param>
+        /// <param name="b">Second integer.</param>
+        /// <param name="other">Other integers.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.
-        /// -or- when length of integers is one.</exception>
-        /// <exception cref="ArgumentNullException">Throw when integers equals null.</exception>
-        public static long GetGcdByEuclidean(out double elapsedTicks, params int[] integers)
+        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Throw when one or more numbers are int.MinValue.</exception>
+        public static long GetGcdByEuclidean(out double elapsedTicks, int a, int b, params int[] other)
         {
             throw new NotImplementedException("You need to implement this function.");
         }
@@ -138,47 +147,49 @@ namespace Gcd
 
         #region GetGcdByStein with elapsed time Methods
         /// <summary>
-        /// Calculates GCD of two integers by the Stein algorithm with elapsed time.
+        /// Calculates GCD of two integers from [-int.MaxValue;int.MaxValue] by the Stein algorithm with elapsed time.
         /// </summary>
+        /// <param name="elapsedTicks">Method execution time in ticks.</param>
         /// <param name="a">First integer.</param>
         /// <param name="b">Second integer.</param>
-        /// <param name="elapsedTicks">Method execution time in ticks.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
-        public static int GetGcdByStein(int a, int b, out double elapsedTicks)
+        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Throw when one or two numbers are int.MinValue.</exception>
+        public static int GetGcdByStein(out double elapsedTicks, int a, int b)
         {
             throw new NotImplementedException("You need to implement this function.");
         }
 
         /// <summary>
-        /// Calculates GCD of three integers by the Stein algorithm with elapsed time.
+        /// Calculates GCD of three integers from [-int.MaxValue;int.MaxValue] by the Stein algorithm with elapsed time.
         /// </summary>
+        /// <param name="elapsedTicks">Method execution time in ticks.</param>
         /// <param name="a">First integer.</param>
         /// <param name="b">Second integer.</param>
         /// <param name="c">Third integer.</param>
-        /// <param name="elapsedTicks">Method execution time in ticks.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
-        public static long GetGcdByStein(int a, int b, int c, out double elapsedTicks)
+        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Throw when one or more numbers are int.MinValue.</exception>
+        public static long GetGcdByStein(out double elapsedTicks, int a, int b, int c)
         {
             throw new NotImplementedException("You need to implement this function.");
         }
 
         /// <summary>
-        /// Calculates the GCD of integers by the Stein algorithm with elapsed time.
+        /// Calculates the GCD of integers from [-int.MaxValue;int.MaxValue] by the Stein algorithm with elapsed time.
         /// </summary>
         /// <param name="elapsedTicks">Method execution time in Ticks.</param>
-        /// <param name="parameters">Source integers.</param>
+        /// <param name="a">First integer.</param>
+        /// <param name="b">Second integer.</param>
+        /// <param name="other">Other integers.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.
-        /// -or- when length of integers is one.</exception>
-        /// <exception cref="ArgumentNullException">Thrown when integers equals null.</exception>
-        public static long GetGcdByStein(out double elapsedTicks, params int[] parameters)
+        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Throw when one or more numbers are int.MinValue.</exception>
+        public static long GetGcdByStein(out double elapsedTicks, int a, int b, params int[] other)
         {
             throw new NotImplementedException("You need to implement this function.");
         }
 
         #endregion GetGcdByStein with elapsed time Methods
-
     }
 }
