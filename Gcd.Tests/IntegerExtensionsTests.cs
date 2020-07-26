@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using NUnit.Framework;
 using static Gcd.IntegerExtensions;
 
@@ -38,6 +38,7 @@ namespace Gcd.Tests
         [TestCase(-10, 35, 90, 55, -105, ExpectedResult = 5)]
         [TestCase(1, 213124, -54654, -123124, 65765, 44444, -7, 1234567, int.MaxValue, ExpectedResult = 1)]
         [TestCase(18, 0, ExpectedResult = 18)]
+        [TestCase(0, 1, 0, 0, ExpectedResult = 1)]
         [TestCase(12, 21, 91, 17, 0, int.MaxValue, ExpectedResult = 1)]
         [TestCase(3, -3, 3, ExpectedResult = 3)]
         [TestCase(-7, -7, ExpectedResult = 7)]
