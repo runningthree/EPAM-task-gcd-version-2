@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace Gcd
 {
@@ -7,8 +7,6 @@ namespace Gcd
     /// </summary>
     public static class IntegerExtensions
     {
-        #region GetGcdByEuclidean Methods
-
         /// <summary>
         /// Calculates GCD of two integers from [-int.MaxValue;int.MaxValue] by the Euclidean algorithm.
         /// </summary>
@@ -50,10 +48,6 @@ namespace Gcd
             throw new NotImplementedException("You need to implement this function.");
         }
 
-        #endregion
-
-        #region GetGcdByStein methods
-
         /// <summary>
         /// Calculates GCD of two integers [-int.MaxValue;int.MaxValue] by the Stein algorithm.
         /// </summary>
@@ -94,10 +88,6 @@ namespace Gcd
         {
             throw new NotImplementedException("You need to implement this function.");
         }
-
-        #endregion GetGcdByStein methods
-
-        #region GetGcdEuclidian with elapsed time Methods
 
         /// <summary>
         /// Calculates GCD of two integers from [-int.MaxValue;int.MaxValue] by the Euclidean algorithm with elapsed time.
@@ -143,9 +133,6 @@ namespace Gcd
             throw new NotImplementedException("You need to implement this function.");
         }
 
-        #endregion GetGcdEuclidian with elapsed time Methods
-
-        #region GetGcdByStein with elapsed time Methods
         /// <summary>
         /// Calculates GCD of two integers from [-int.MaxValue;int.MaxValue] by the Stein algorithm with elapsed time.
         /// </summary>
@@ -189,7 +176,5 @@ namespace Gcd
         {
             throw new NotImplementedException("You need to implement this function.");
         }
-
-        #endregion GetGcdByStein with elapsed time Methods
     }
 }
