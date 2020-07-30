@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Gcd
 {
@@ -13,8 +13,8 @@ namespace Gcd
         /// <param name="a">First integer.</param>
         /// <param name="b">Second integer.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
-        /// <exception cref="ArgumentOutOfRangeException">Throw when one or two numbers are int.MinValue.</exception>
+        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when one or two numbers are int.MinValue.</exception>
         public static int GetGcdByEuclidean(int a, int b)
         {
             throw new NotImplementedException("You need to implement this function.");
@@ -27,8 +27,8 @@ namespace Gcd
         /// <param name="b">Second integer.</param>
         /// <param name="c">Third integer.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
-        /// <exception cref="ArgumentOutOfRangeException">Throw when one or more numbers are int.MinValue.</exception>
+        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when one or more numbers are int.MinValue.</exception>
         public static int GetGcdByEuclidean(int a, int b, int c)
         {
             throw new NotImplementedException("You need to implement this function.");
@@ -41,8 +41,8 @@ namespace Gcd
         /// <param name="b">Second integer.</param>
         /// <param name="other">Other integers.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
-        /// <exception cref="ArgumentOutOfRangeException">Throw when one or more numbers are int.MinValue.</exception>
+        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when one or more numbers are int.MinValue.</exception>
         public static int GetGcdByEuclidean(int a, int b, params int[] other)
         {
             throw new NotImplementedException("You need to implement this function.");
@@ -55,7 +55,7 @@ namespace Gcd
         /// <param name="b">Second integer.</param>
         /// <returns>The GCD value.</returns>
         /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
-        /// <exception cref="ArgumentOutOfRangeException">Throw when one or two numbers are int.MinValue.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when one or two numbers are int.MinValue.</exception>
         public static int GetGcdByStein(int a, int b)
         {
             throw new NotImplementedException("You need to implement this function.");
@@ -68,8 +68,8 @@ namespace Gcd
         /// <param name="b">Second integer.</param>
         /// <param name="c">Third integer.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
-        /// <exception cref="ArgumentOutOfRangeException">Throw when one or more numbers are int.MinValue.</exception>
+        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when one or more numbers are int.MinValue.</exception>
         public static int GetGcdByStein(int a, int b, int c)
         {
             throw new NotImplementedException("You need to implement this function.");
@@ -82,8 +82,8 @@ namespace Gcd
         /// <param name="b">Second integer.</param>
         /// <param name="other">Other integers.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
-        /// <exception cref="ArgumentOutOfRangeException">Throw when one or more numbers are int.MinValue.</exception>
+        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when one or more numbers are int.MinValue.</exception>
         public static int GetGcdByStein(int a, int b, params int[] other)
         {
             throw new NotImplementedException("You need to implement this function.");
@@ -96,8 +96,8 @@ namespace Gcd
         /// <param name="a">First integer.</param>
         /// <param name="b">Second integer.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
-        /// <exception cref="ArgumentOutOfRangeException">Throw when one or two numbers are int.MinValue.</exception>
+        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when one or two numbers are int.MinValue.</exception>
         public static int GetGcdByEuclidean(out double elapsedTicks, int a, int b)
         {
             throw new NotImplementedException("You need to implement this function.");
@@ -111,8 +111,8 @@ namespace Gcd
         /// <param name="b">Second integer.</param>
         /// <param name="c">Third integer.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
-        /// <exception cref="ArgumentOutOfRangeException">Throw when one or more numbers are int.MinValue.</exception>
+        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when one or more numbers are int.MinValue.</exception>
         public static long GetGcdByEuclidean(out double elapsedTicks, int a, int b, int c)
         {
             throw new NotImplementedException("You need to implement this function.");
@@ -126,8 +126,8 @@ namespace Gcd
         /// <param name="b">Second integer.</param>
         /// <param name="other">Other integers.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
-        /// <exception cref="ArgumentOutOfRangeException">Throw when one or more numbers are int.MinValue.</exception>
+        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when one or more numbers are int.MinValue.</exception>
         public static long GetGcdByEuclidean(out double elapsedTicks, int a, int b, params int[] other)
         {
             throw new NotImplementedException("You need to implement this function.");
@@ -140,8 +140,8 @@ namespace Gcd
         /// <param name="a">First integer.</param>
         /// <param name="b">Second integer.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
-        /// <exception cref="ArgumentOutOfRangeException">Throw when one or two numbers are int.MinValue.</exception>
+        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when one or two numbers are int.MinValue.</exception>
         public static int GetGcdByStein(out double elapsedTicks, int a, int b)
         {
             throw new NotImplementedException("You need to implement this function.");
@@ -155,8 +155,8 @@ namespace Gcd
         /// <param name="b">Second integer.</param>
         /// <param name="c">Third integer.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
-        /// <exception cref="ArgumentOutOfRangeException">Throw when one or more numbers are int.MinValue.</exception>
+        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when one or more numbers are int.MinValue.</exception>
         public static long GetGcdByStein(out double elapsedTicks, int a, int b, int c)
         {
             throw new NotImplementedException("You need to implement this function.");
@@ -170,8 +170,8 @@ namespace Gcd
         /// <param name="b">Second integer.</param>
         /// <param name="other">Other integers.</param>
         /// <returns>The GCD value.</returns>
-        /// <exception cref="ArgumentException">Throw when all numbers are 0 at the same time.</exception>
-        /// <exception cref="ArgumentOutOfRangeException">Throw when one or more numbers are int.MinValue.</exception>
+        /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when one or more numbers are int.MinValue.</exception>
         public static long GetGcdByStein(out double elapsedTicks, int a, int b, params int[] other)
         {
             throw new NotImplementedException("You need to implement this function.");
